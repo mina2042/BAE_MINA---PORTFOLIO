@@ -220,7 +220,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const syncBannerWidth = () => {
       if (section.id !== 'slide-banner') return;
       const offset = getOffset();
-      const cardWidth = (window.innerWidth - offset - GAP) / 2;
+      // 왼쪽 offset + gap + 오른쪽 offset 제외하고 2등분
+      const cardWidth = (window.innerWidth - offset - GAP - offset) / 2;
       section.querySelectorAll('.slide-card').forEach(card => {
         card.style.width = cardWidth + 'px';
       });
