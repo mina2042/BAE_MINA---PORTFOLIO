@@ -430,7 +430,7 @@ document.addEventListener('DOMContentLoaded', () => {
       subTitle: 'Black Friday 70% Off 3D',
       overview: '입체적인 핑크 3D 타이포로 할인율을 강하게 부각했습니다. 어두운 배경으로 행사 시즌의 화려함을 표현했습니다.',
       intent: '시선을 단번에 사로잡는 강렬한 비주얼과 명확한 정보 전달을 목표로 했습니다.',
-      imgSrc: 'imgs/29cm-process.jpg'
+      imgSrc: 'imgs/banner_1-1.jpg'
     },
     'banner-02': {
       tags: ['SEASON'],
