@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> BAE MINA - PORTFOLIO </title>
+
+  <!-- OG Tags -->
+  <meta property="og:title" content="MINA PORTFOLIO">
+  <meta property="og:description" content="웹 퍼블리셔 · 디자이너 포트폴리오">
+  <meta property="og:image" content="img/og-image.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./imgs/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- =================== intro =================== -->
+  <div class="background-text-container">
+    <h1 class="bg-wave-text">WAVE</h1>
+  </div>
+
+  <!-- =================== cursor =================== -->
+  <!-- =================== loading =================== -->
+  <div id="loading-page">
+    <div class="loader-content">
+      <canvas id="loader-canvas"></canvas>
+      <p class="loading-label">Loading <span id="loading-percent">0</span>%</p>
+    </div>
+  </div>
+
+  <canvas id="cursor-canvas"></canvas>
+
+  <!-- =================== HEADER =================== -->
+  <header id="header" class="sec">
+    <div class="header-content-wrap">
+      <nav class="menu-box">
+
+        <!-- nav left -->
+        <ul class="nav-group left">
+          <li><a href="#intro">INTRO</a></li>
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+        </ul>
+
+        <!-- nav logo -->
+        <div class="logo-box">
+          <a class="logo" href="#intro">
+            <span class="logo-mark"><img src="./imgs/logo.png" alt=""></span>
+          </a>
+        </div>
+
+        <!-- nav right -->
+        <ul class="nav-group right">
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#contact">WORK-DETAIL</a></li>
+          <li><a href="#outro">CONTACT</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- =============== MAIN =============== -->
+  <main>
+
+    <!-- ============ INTRO ============ -->
+    <section id="intro" class="sec sec-intro">
+      <div class="con">
+
+        <div class="intro-eyebrow">
+          <span>DESIGN</span>
+          <span class="dot">·</span>
+          <span>UIUX</span>
+          <span class="dot">·</span>
+          <span>PUBLISHER</span>
+          
+        </div>
+
+        <div class="intro-sub">PORTFOLIO</p>
+          
+          <div class="portfolio-info">
+            <span>흐름으로 사용자 경험의 결을 잇고,</span>
+            <span>본질을 비워낸 여백에 투명한 물결을 담습니다.</span>
+          </div>
+        </div>
+
+        <div class="intro-eyebrow2">
+          <span>BAE</span>
+        </div>
+
+      </div>
+
+      <!-- ===== Wave Animation ===== -->
+      <div class="intro-waves-wrap">
+        <svg class="intro-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="intro-gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="intro-parallax">
+            <use xlink:href="#intro-gentle-wave" x="48" y="0" fill="rgba(25,25,24,0.06)" />
+            <use xlink:href="#intro-gentle-wave" x="48" y="3" fill="rgba(25,25,24,0.04)" />
+            <use xlink:href="#intro-gentle-wave" x="48" y="5" fill="rgba(25,25,24,0.025)" />
+            <use xlink:href="#intro-gentle-wave" x="48" y="7" fill="rgba(25,25,24,0.015)" />
+          </g>
+        </svg>
+      </div>
+      <!-- ===== Wave End ===== -->
+
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="sec sec-about">
+      <div class="con">
+
+        <div class="about-grid">
+
+          <!-- 좌측: 텍스트 -->
+          <div class="about-left">
+            <p class="sec-label">About me</p>
+            <p class="about-desc">
+              콘텐츠를 마주하는 경험은 자연스럽게 흐르는 물길과 같아야 한다고 생각합니다.<br>
+              사용자의 시선이 길을 잃지 않도록 불필요한 장식은 걷어내고, 브랜드가 전하고자 하는 핵심 메시지로<br>
+              흐름을 유도합니다. 또한 좋은 디자인은 화려한 치장이 아닌, 콘텐츠의 본질을 가장 투명하게 비추는 그릇<br>
+              이 되어야 좋은 디자인이라고 생각합니다. 그런 의미에서 저는 명확한 시각적 위계를 설계하여, 다양한<br>
+              미디어에서도 메시지가 막힘없이 스며드는 흡인력 있는 콘텐츠를 만들어가겠습니다.
+            </p>
+            <a href="mailto:nadaon.430@gmail.com" class="about-cta">Contact me →</a>          </div>
+
+          <!-- 우측: 소개 텍스트 -->
+          <div class="about-right">
+            <div class="about-stamp">
+              <p class="about-stamp-text">
+                더 진한 완성도를 향해 묵묵히 나아가는<br>
+                <strong class="about-stamp-name">디자이너 배미나 입니다</strong>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ PROFILE ============ -->
+    <section id="profile" class="sec sec-profile">
+      <div class="profile-inner">
+
+        <!-- 좌측 -->
+        <div class="pf-left">
+          <div class="pf-name-wrap">
+            <p class="pf-name-ko">Bae Mina</p>
+            <p>2002.04.02</p>
+          </div>
+          <div class="pf-photo-wrap">
+            <img src="./imgs/profile-mina.jpg" alt="프로필사진" class="pf-photo">
+            <div class="pf-contacts">
+              <div class="pf-contact-row">
+                <span class="pf-contact-label">name</span>
+                <span class="pf-contact-val">배미나</span>
+              </div>
+              <div class="pf-contact-row">
+                <span class="pf-contact-label">mobile</span>
+                <span class="pf-contact-val">010 - 4966 - 1923</span>
+              </div>
+              <div class="pf-contact-row">
+                <span class="pf-contact-label">e-mail</span>
+                <span class="pf-contact-val">nadaon.430@gmail.com</span>
+              </div>
+              <div class="pf-contact-row">
+                <span class="pf-contact-label">insta</span>
+                <span class="pf-contact-val">na_.daon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 우측 -->
+        <div class="pf-right">
+
+          <!-- 학력사항 -->
+          <div class="pf-section">
+            <h3 class="pf-section-title">Education</h3>
+            <ul class="pf-list">
+              <li class="pf-item">
+                <span class="pf-date">2025 . 09</span>
+                <span class="pf-desc">UIUX AI 웹퍼블리셔 양성과정</span>
+              </li>
+              <li class="pf-item">
+                <span class="pf-date">2025 . 08</span>
+                <span class="pf-desc">국립한밭대학교 졸업</span>
+              </li>
+              <li class="pf-item">
+                <span class="pf-date">2021 . 02</span>
+                <span class="pf-desc">대성여자고등학교 졸업</span>
+              </li>
+              <li class="pf-item">
+                <span class="pf-date">2018 . 02</span>
+                <span class="pf-desc">충남여자중학교 졸업</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 경력사항 -->
+          <div class="pf-section">
+            <h3 class="pf-section-title">Qualifications</h3>
+            <ul class="pf-list">
+              <li class="pf-item">
+                <span class="pf-date">2022 . 11</span>
+                <span class="pf-desc">대전 서구 콘텐츠 공모전 _ 장려상</span>
+              </li>
+              <li class="pf-item">
+                <span class="pf-date">2022 . 11</span>
+                <span class="pf-desc">충남산업디자인대전 도내시각기업지원 _ 특선</span>
+              </li>
+              <li class="pf-item">
+                <span class="pf-date">2022 . 11</span>
+                <span class="pf-desc">충남산업디자인대전 도내시각기업지원 _ 입선</span>
+              </li>
+              <li class="pf-item">
+                <span class="pf-date">2022 . 09</span>
+                <span class="pf-desc">제 20회 옥외광고대상전 창작디자인 부문 _ 동상</span>
+              </li>
+              <li class="pf-item">
+                <span class="pf-date">2019 . 04</span>
+                <span class="pf-desc">지방기능경기대회 _ 금상</span>
+              </li>
+            </ul>
+          </div>
+
+        </div><!-- /pf-right -->
+
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATES ============ -->
+    <section id="certificates" class="sec sec-certificates">
+      <div class="con cert-inner">
+
+        <!-- 좌: 타이틀 + 블루 블러 -->
+        <div class="cert-left">
+          <h2 class="cert-title">Certificates</h2>
+        </div>
+
+        <!-- 우: 자격증 리스트 -->
+        <div class="cert-right">
+          <ul class="cert-list">
+            <li class="cert-item">
+              <span class="cert-name">Adobe Certified Professional: Illustrator CC 2023</span>
+              <span class="cert-org">한국생산성본부</span>
+              <span class="cert-date">2025.08</span>
+            </li>
+            <li class="cert-item">
+              <span class="cert-name">Adobe Certified Professional: Photoshop CC 2023</span>
+              <span class="cert-org">한국생산성본부</span>
+              <span class="cert-date">2025.08</span>
+            </li>
+            <li class="cert-item">
+              <span class="cert-name">웹디자인 기능사 필기</span>
+              <span class="cert-org">한국산업인력공단</span>
+              <span class="cert-date">2025.04</span>
+            </li>
+            <li class="cert-item">
+              <span class="cert-name">운전면허 2종 보통</span>
+              <span class="cert-org">대전광역시경찰청</span>
+              <span class="cert-date">2022.04</span>
+            </li>
+            <li class="cert-item">
+              <span class="cert-name">정보기술자격(ITQ) 아래한글</span>
+              <span class="cert-org">한국생산성본부</span>
+              <span class="cert-date">2018.05</span>
+            </li>
+            <li class="cert-item">
+              <span class="cert-name">정보기술자격(ITQ) 한글파워포인트</span>
+              <span class="cert-org">한국생산성본부</span>
+              <span class="cert-date">2018.03</span>
+            </li>
+            <li class="cert-item">
+              <span class="cert-name">정보기술자격(ITQ) 한글엑셀</span>
+              <span class="cert-org">한국생산성본부</span>
+              <span class="cert-date">2018.03</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="sec sec-skills">
+      <div class="con">
+
+        <p class="sec-label skills-label">Skills</p>
+        <p class="skills-desc">
+          다양한 툴을 활용해 아이디어를 실체화하며, 디자인의 감성과 구조의 완성도를 함께 잡습니다.<br>
+          사용자의 흐름과 경험을 고려해 자연스럽게 이어지는 화면을 구현합니다.
+        </p>
+
+        <div class="skills-grid">
+
+          <div class="skill-item">
+            <span class="skill-item-num">01</span>
+            <span class="skill-item-line"></span>
+            <h3 class="skill-category">Illustrator</h3>
+            <p>Illustrator를 통해 로고, 아이콘, 인포그래픽 등 다양한 벡터 디자인을 제작<br>할 수 있고, 브랜드 아이덴티티를 시각적으로 표현할 수 있습니다.</p>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-item-num">02</span>
+            <span class="skill-item-line"></span>
+            <h3 class="skill-category">Photoshop</h3>
+            <p>Photoshop을 통해 이미지를 보정하고 합성하여 시각적인 완성도를<br> 높일 수 있습니다. 배너, 웹 시안 등을 자유롭게 제작할 수 있습니다.</p>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-item-num">03</span>
+            <span class="skill-item-line"></span>
+            <h3 class="skill-category">Figma</h3>
+            <p>Figma를 통해 웹과 모바일 인터페이스를 시각적으로 설계할 수 있습니다. <br>컴포넌트와 프로토타입 기능을 활용해 사용자 흐름을 쉽게 확인합니다.</p>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-item-num">04</span>
+            <span class="skill-item-line"></span>
+            <h3 class="skill-category">HTML</h3>
+            <p>HTML을 통해 웹페이지의 기본 구조를 만들 수 있습니다. 콘텐츠를 논리적으로 구분하고 의미를 부여해 접근성 높은 페이지를 설계할 수 있습니다.</p>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-item-num">05</span>
+            <span class="skill-item-line"></span>
+            <h3 class="skill-category">CSS</h3>
+            <p>CSS를 통해 웹페이지의 시각적 스타일을 자유롭게 표현할 수 있습니다. 다양한 디바이스에 맞춘 반응형 웹 디자인을 구현할 수 있습니다.</p>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-item-num">06</span>
+            <span class="skill-item-line"></span>
+            <h3 class="skill-category">JavaScript</h3>
+            <p>JavaScript를 통해 웹페이지에 생동감 있는 인터랙션을 추가할 수 있습니다. 버튼 클릭, 스크롤, 애니메이션 등 사용자와 상호작용하는 기능을 구현합니다.</p>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-item-num">07</span>
+            <span class="skill-item-line"></span>
+            <h3 class="skill-category">jQuery</h3>
+            <p>jQuery를 통해 복잡한 JavaScript 기능을 간단하게 구현할 수 있습니다. DOM 조작, 애니메이션, 이벤트 제어를 손쉽게 다룰 수 있습니다.</p>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-item-num">08</span>
+            <span class="skill-item-line"></span>
+            <h3 class="skill-category">GitHub</h3>
+            <p>Git과 GitHub를 통해 디자인 및 코드의 버전을 체계적으로 관리할 수 있습니다. 팀 프로젝트에서 함께 작업하며 유지보수를 원활히 진행합니다.</p>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-item-num">09</span>
+            <span class="skill-item-line"></span>
+            <h3 class="skill-category">React</h3>
+            <p>React를 통해 컴포넌트 단위로 디자인을 구조화할 수 있습니다. 디자인 변경 시에도 유지보수가 쉬운 구조적 스타일 시스템을 만들 수 있습니다.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ WORKS ============ -->
+    <section id="works" class="sec sec-works">
+      <div class="con con-works">
+
+        <p class="sec-label">Works</p>
+
+        <!-- 작업 인덱스 목록 -->
+        <div class="works-index">
+          <ul class="works-list">
+            <li class="works-item" data-target="branding-weave">
+              <span class="works-num">01</span>
+              <span class="works-name">Branding</span>
+              <span class="works-category">memento · banggeut · weave </span>
+              <span class="works-year">2024</span>
+            </li>
+            <li class="works-item" data-target="slide-web">
+              <span class="works-num">02</span>
+              <span class="works-name">Web Redesign</span>
+              <span class="works-category">COSRX · Nikon · 29CM · duover </span>
+              <span class="works-year">2024</span>
+            </li>
+            <li class="works-item" data-target="slide-detail">
+              <span class="works-num">03</span>
+              <span class="works-name">Detail Page Design</span>
+              <span class="works-category">UI Design</span>
+              <span class="works-year">2023</span>
+            </li>
+            <li class="works-item" data-target="slide-banner">
+              <span class="works-num">04</span>
+              <span class="works-name">Banner Design</span>
+              <span class="works-category">Design · Publishing</span>
+              <span class="works-year">2024</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- ============ BRANDING - WEAVE ============ -->
+      <section id="branding-weave" class="sec">
+        <div class="con">
+          <div class="branding-title-box">
+            <button class="branding-ti-cat">BRANDING</button>
+            <div class="branding-ti">weave</div>
+            <div class="branding-ti-sub">관계 맞춤형 소통 플랫폼</div>
+          </div>
+          <div class="branding-top" fade="up" data-delay="0.2">
+            <div class="project-info-box">
+              <div class="project-info-name">
+                <span class="info-name">DATE.</span>
+                <span class="info-name">WORK.</span>
+                <span class="info-name">TOOL.</span>
+              </div>
+              <div class="project-info-txt">
+                <p class="info-txt">2025.04 ~ 2025.05 (4주)</p>
+                <p class="info-txt">기여도 50% / 2인 팀 프로젝트</p>
+                <p class="info-txt-3">Figma &nbsp;Ai&nbsp; Ps&nbsp; CSS&nbsp; HTML<br>Java Script&nbsp; Git / GitHub</p>
+              </div>
+            </div>
+          </div>
+          <div class="branding-bottom" fade="up" data-delay="0.2">
+            <div class="btn-group">
+              <button class="btn-1"><a href="https://mina2042.github.io/weave-project/" target="_blank">Design</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ BRANDING - BANGGEUT ============ -->
+      <section id="branding-banggeut" class="sec">
+        <div class="con">
+          <div class="branding-title-box">
+            <button class="branding-ti-cat">BRANDING</button>
+            <div class="branding-ti">BANGGEUT</div>
+            <div class="branding-ti-sub">자취 생활 케어 솔루션 플랫폼</div>
+          </div>
+          <div class="branding-top" fade="up" data-delay="0.2">
+            <div class="project-info-box">
+              <div class="project-info-name">
+                <span class="info-name">DATE.</span>
+                <span class="info-name">WORK.</span>
+                <span class="info-name">TOOL.</span>
+              </div>
+              <div class="project-info-txt">
+                <p class="info-txt">2025.07 ~ 2025.08 (4주)</p>
+                <p class="info-txt">기여도 50% / 2인 팀 프로젝트</p>
+                <p class="info-txt-3">Figma &nbsp;Ai&nbsp; Ps&nbsp; CSS&nbsp; HTML<br>Java Script&nbsp; Git / GitHub</p>
+              </div>
+            </div>
+          </div>
+          <div class="branding-bottom" fade="up" data-delay="0.2">
+            <div class="btn-group">
+              <button class="btn-2"><a href="https://mina2042.github.io/banggeut-project/" target="_blank">Process</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 작업 슬라이드 영역 (con 밖으로 풀블리드) -->
+      <div class="works-slides-wrap">
+        <!-- WEB REDESIGN -->
+        <div class="works-slide-section" id="slide-web">
+          <div class="slide-header con">
+            <div class="slide-tags">
+              <span class="slide-tag">UI<sup>4</sup></span>
+              <span class="slide-tag">PUBLISHER<sup></sup></span>
+            </div>
+            <div class="slide-header-bottom">
+              <h3 class="slide-title"><span>Web</span>&nbsp;redesign</h3>
+              <p class="slide-desc">기존 웹사이트의 정보 구조와 사용자 경험을 분석하여 불필요한 요소를 정리하고, 사용자의 접근성과 가독성을 향상시키는 방향으로 리디자인을 진행하였습니다. 사용자 중심의 UI 설계와 시각적 완성도를 고려하여 브랜드 아이덴티티를 유지하면서도 보다 직관적인 서비스 경험을 제공하는 데 중점을 두었습니다.</p>
+            </div>
+          </div>
+          <div class="slide-track-wrap">
+            <div class="slide-track" id="track-web">
+              <!-- 1 -->
+              <div class="slide-card" data-popup="web-01">
+                <div class="slide-card-img" style="background-image: url('./imgs/29cm.jpg'); background-size: cover; background-position: top;">
+                  <div class="slide-overlay">
+                    <span class="btn-design" data-popup="web-01">( SHOW DESIGN )</span>
+                  <span class="btn-process" data-popup="web-01-process">( SHOW PROCESS )</span>
+                  </div>
+                </div>
+                <h4 class="slide-card-title">29CM</h4>
+                <p class="slide-card-desc">고감도 브랜드 이미지를 살린 미니멀한 레이아웃을 사용하여 리디자인했습니다.</p>
+              </div>
+              <!-- 2 -->
+              <div class="slide-card" data-popup="web-02">
+                <div class="slide-card-img" style="background-image: url('./imgs/nikon.jpg'); background-size: cover; background-position: top;">
+                  <div class="slide-overlay">
+                    <span class="btn-design" data-popup="web-02">( SHOW DESIGN )</span>
+                    <span class="btn-process" data-popup="web-02-process">( SHOW PROCESS )</span>
+                  </div>
+                </div>
+                <h4 class="slide-card-title">Nikon</h4>
+                <p class="slide-card-desc">깊이 있는 블랙 톤과 미니멀한 타이포그래피로 니콘만의 압도적인 광학 기술력을 시각화하여 리디자인했습니다.</p>
+              </div>
+              <!-- 3 -->
+              <div class="slide-card" data-popup="web-03">
+                <div class="slide-card-img" style="background-image: url('./imgs/./duover.jpg'); background-size: cover; background-position: top;">
+                  <div class="slide-overlay">
+                    <span class="btn-design" data-popup="web-03">( SHOW DESIGN )</span>
+                    <span class="btn-process" data-popup="web-03-process">( SHOW PROCESS )</span>
+                  </div>
+                </div>
+                <h4 class="slide-card-title">duover</h4>
+                <p class="slide-card-desc">스트릿 감성의 볼드한 그래픽 요소를 활용해 브랜드의 독창적인 아티스트십을 강조한 웹 리디자인</p>
+              </div>
+              <!-- 4 -->
+              <div class="slide-card" data-popup="web-04">
+                <div class="slide-card-img" style="background-image: url('./imgs/cosrx.webp'); background-size: cover; background-position: top;">
+                  <div class="slide-overlay">
+                    <span class="btn-design" data-popup="web-04">( SHOW DESIGN )</span>
+                    <span class="btn-process" data-popup="web-04-process">( SHOW PROCESS )</span>
+                  </div>
+                </div>
+                <h4 class="slide-card-title">COSRX</h4>
+                <p class="slide-card-desc">정제된 여백과 미니멀 UI를 통해 피부 과학의 신뢰감을 시각화한 브랜드 리디자인</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DETAIL PAGE DESIGN -->
+        <div class="works-slide-section" id="slide-detail">
+          <div class="slide-header con">
+            <div class="slide-tags">
+              <span class="slide-tag">PRODUCT <sup>3</sup></span>
+              <span class="slide-tag">DESIGN <sup>2</sup></span>
+            </div>
+            <div class="slide-header-bottom">
+              <h3 class="slide-title"><span>detail page</span>&nbsp;design</h3>
+              <p class="slide-desc">제품의 특성과 매력을 전달하는 상세페이지 디자인입니다. 구성·서체·이미지 배치를 체계적으로 정리해 사용자 이해도를 높였습니다.</p>
+            </div>
+          </div>
+          <div class="slide-track-wrap">
+            <div class="slide-track" id="track-detail">
+              <div class="slide-card" data-popup="detail-01">
+                <div class="slide-card-img" style="background-image: url('imgs/detail-1.jpg'); background-size: cover; background-position: bottom;">
+                  <div class="slide-overlay"><span class="btn-design" data-popup="detail-01">( SHOW DESIGN )</span></div>
+                </div>
+                <h4 class="slide-card-title">cellinffect</h4>
+                <p class="slide-card-desc">사용 이유와 구조를 중심으로 편안함을 설명하는 오피스 체어 상세 페이지입니다.</p>
+              </div>
+              <div class="slide-card" data-popup="detail-02">
+                <div class="slide-card-img" style="background-image: url('imgs/detail-1.jpg'); background-size: cover; background-position: bottom;">
+                  <div class="slide-overlay"><span class="btn-design" data-popup="detail-02">( SHOW DESIGN )</span></div>
+                </div>
+                <h4 class="slide-card-title">COSMETIC DETAIL</h4>
+                <p class="slide-card-desc">코스메틱 제품 상세 페이지 디자인입니다.</p>
+              </div>
+              <div class="slide-card" data-popup="detail-03">
+                <div class="slide-card-img" style="background-image: url('imgs/detail-1.jpg'); background-size: cover; background-position: bottom;">
+                  <div class="slide-overlay"><span class="btn-design" data-popup="detail-03">( SHOW DESIGN )</span></div>
+                </div>
+                <h4 class="slide-card-title">HEADPHONE DETAIL</h4>
+                <p class="slide-card-desc">헤드폰 제품 상세 페이지 디자인입니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BANNER DESIGN -->
+        <div class="works-slide-section" id="slide-banner">
+          <div class="slide-header con">
+            <div class="slide-tags">
+              <span class="slide-tag">PRODUCT <sup>3</sup></span>
+              <span class="slide-tag">DESIGN <sup>2</sup></span>
+            </div>
+            <div class="slide-header-bottom">
+              <h3 class="slide-title"><span>Banner</span>&nbsp;design</h3>
+              <p class="slide-desc">제품의 특성과 매력을 전달하는 상세페이지 디자인입니다. 구성·서체·이미지 배치를 체계적으로 정리해 사용자 이해도를 높였습니다.</p>
+            </div>
+          </div>
+          <div class="slide-track-wrap">
+            <div class="slide-track" id="track-detail">
+              <div class="slide-card" data-popup="banner-01">
+                <div class="slide-card-img" style="background-color:#f5f0eb;">
+                  <div class="slide-overlay"><span class="btn-design" data-popup="banner-01">( SHOW DESIGN )</span></div>
+                </div>
+                <h4 class="slide-card-title">COMFORT CHAIR 80</h4>
+                <p class="slide-card-desc">사용 이유와 구조를 중심으로 편안함을 설명하는 오피스 체어 상세 페이지입니다.</p>
+              </div>
+              <div class="slide-card" data-popup="banner-02">
+                <div class="slide-card-img" style="background-color:#e8eef5;">
+                  <div class="slide-overlay"><span class="btn-design" data-popup="banner-02">( SHOW DESIGN )</span></div>
+                </div>
+                <h4 class="slide-card-title">COSMETIC DETAIL</h4>
+                <p class="slide-card-desc">코스메틱 제품 상세 페이지 디자인입니다.</p>
+              </div>
+              <div class="slide-card" data-popup="banner-03">
+                <div class="slide-card-img" style="background-color:#f0ebe8;">
+                  <div class="slide-overlay"><span class="btn-design" data-popup="banner-03">( SHOW DESIGN )</span></div>
+                </div>
+                <h4 class="slide-card-title">HEADPHONE DETAIL</h4>
+                <p class="slide-card-desc">헤드폰 제품 상세 페이지 디자인입니다.</p>
+              </div>
+              <!-- 복제 -->
+              <div class="slide-card" data-popup="banner-01">
+                <div class="slide-card-img" style="background-color:#f5f0eb;">
+                  <div class="slide-overlay"><span class="btn-design" data-popup="banner-01">( SHOW DESIGN )</span></div>
+                </div>
+                <h4 class="slide-card-title">COMFORT CHAIR 80</h4>
+                <p class="slide-card-desc">사용 이유와 구조를 중심으로 편안함을 설명하는 오피스 체어 상세 페이지입니다.</p>
+              </div>
+              <div class="slide-card" data-popup="banner-02">
+                <div class="slide-card-img" style="background-color:#e8eef5;">
+                  <div class="slide-overlay"><span class="btn-design" data-popup="banner-02">( SHOW DESIGN )</span></div>
+                </div>
+                <h4 class="slide-card-title">COSMETIC DETAIL</h4>
+                <p class="slide-card-desc">코스메틱 제품 상세 페이지 디자인입니다.</p>
+              </div>
+              <div class="slide-card" data-popup="banner-03">
+                <div class="slide-card-img" style="background-color:#f0ebe8;">
+                  <div class="slide-overlay"><span class="btn-design" data-popup="banner-03">( SHOW DESIGN )</span></div>
+                </div>
+                <h4 class="slide-card-title">HEADPHONE DETAIL</h4>
+                <p class="slide-card-desc">헤드폰 제품 상세 페이지 디자인입니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /works-slides-wrap -->
+    </section>
+    
+
+    <!-- ============ OUTRO ============ -->
+    <section id="outro" class="sec sec-outro">
+      <div class="con">
+
+        <!-- 마르퀴 텍스트 (레퍼런스의 흘러가는 텍스트) -->
+        <div class="outro-marquee">
+          <span>DESIGN · UIUX · PUBLISHER — LET’S WORK TOGETHER — </span>
+        </div>
+
+        <h2 class="outro-title">
+          Ideas sealed<br>
+          <em>with intention</em>
+        </h2>
+
+        <p class="outro-sub">
+          끝까지 봐주셔서 감사합니다.<br>
+          다음 페이지는 더 선명하게 채워가겠습니다.
+        </p>
+
+        <a href="mailto:nadaon.430@gmail.com" class="outro-email">nadaon.430@gmail.com ↗</a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============== POPUP MODAL =============== -->
+  <div id="popup-overlay" class="popup-overlay">
+    <div class="popup-inner">
+      <!-- 좌: 이미지 스크롤 영역 -->
+      <div class="popup-left">
+        <div class="popup-img-scroll">
+          <div class="popup-img-placeholder" id="popup-img">
+            <!-- 이미지 또는 목업 들어갈 자리 -->
+            <img src="" alt="" id="popup-main-img">
+          </div>
+        </div>
+      </div>
+      <!-- 우: 프로젝트 정보 -->
+      <div class="popup-right">
+        <div class="popup-tags" id="popup-tags"></div>
+        <h2 class="popup-project-title" id="popup-title">Project info</h2>
+        <div class="popup-divider"></div>
+        <div class="popup-section">
+          <h4 id="popup-sub-title"></h4>
+          <p id="popup-overview"></p>
+        </div>
+        <div class="popup-divider"></div>
+        <div class="popup-section">
+          <h4>Design Intent</h4>
+          <p id="popup-intent"></p>
+        </div>
+      </div>
+      <!-- 닫기 버튼 -->
+      <button class="popup-close" id="popup-close">✕</button>
+    </div>
+  </div>
+
+  <!-- =============== FOOTER =============== -->
+  <footer id="footer">
+    <div class="con">
+      <ul class="footer-nav">
+        <li>DESIGN</li>
+        <li>·</li>
+        <li>UIUX</li>
+        <li>·</li>
+        <li>PUBLISHER</li>
+      </ul>
+      <p class="footer-copy">© 2026 MINA. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="./script.js"></script>
+
+</body>
+</html>
