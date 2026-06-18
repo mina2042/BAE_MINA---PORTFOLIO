@@ -319,6 +319,27 @@ em {
   pointer-events: none;
 }
 
+.intro-waves-wrap::before,
+.intro-waves-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 18%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.intro-waves-wrap::before {
+  left: 0;
+  background: linear-gradient(to right, var(--color-bg) 0%, transparent 100%);
+}
+
+.intro-waves-wrap::after {
+  right: 0;
+  background: linear-gradient(to left, var(--color-bg) 0%, transparent 100%);
+}
+
 .intro-waves {
   display: block;
   width: 100%;
